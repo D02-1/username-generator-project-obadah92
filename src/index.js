@@ -1,7 +1,7 @@
 // was benötigen wie?
 
-//const fs = require('fs');
-//const path = require('path');
+const fs = require('fs');
+const path = require('path');
 /**
  * @function getWords
  * @description Reads words from json file.
@@ -56,4 +56,22 @@ function capitalizeString(word) {
     return wordStart + wordRest;
 }
 
-console.log(capitalizeString("hallo"));
+console.log(capitalizeString("Hallo"))
+
+
+
+function createRandomUserName(maxNumber) {
+    const words = getWords();
+
+    const adj = words.adjs[Math.floor(Math.random() * (words.adjs.length - 1))];
+
+
+    const noun = words.nouns[Math.floor(Math.random() * (words.nouns.length - 1))];
+
+    const randomNumber = createRandomNumber(10000, maxNumber);
+    console.log(randomNumber);
+
+    const finalUserName = `${capitalizeString(adj)}${capitalizeString(noun)}${maxNumber!==0 ? randomNumber:''}`;
+    console.log(finalUserName);
+}
+createRandomUserName(50000);
