@@ -58,7 +58,6 @@ function capitalizeString(word) {
 
 
 
-
 /**
  * @function createRandomUserName
  * @description Creates a random username
