@@ -19,4 +19,4 @@ The generated username will look something like this:
 - BlackFire39945
 ## License
 
-copyright (c) 2020 F. obadah mit .licensed under the terms of the MIT license.       https://www.richie-bendall.ml/mit-license-generator/
+copyright (c) 2020 F. obadah mit .licensed under the terms of the MIT license.  https://obadah-mit.mit-license.org/
