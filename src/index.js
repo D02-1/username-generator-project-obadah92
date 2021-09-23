@@ -32,3 +32,28 @@ function createRandomNumber(minNumber, maxNumber) {
     // wir geben die zufällige nummer zrück
     return num;
 }
+/**
+ * @function capitalizeString
+ * @description Takes the first letter of a string and changes it to Uppercase, then returns string
+ * @param { string } word 
+ * @returns { string }
+ */
+
+
+
+
+function capitalizeString(word) {
+
+    if (word === undefined || word.length === 0 || !isNaN(word))
+
+    {
+        return "Default";
+    }
+    // wir nehmen den ersten Buchstaben von unserem String
+    const wordStart = word.charAt(0).toUpperCase();
+    const wordRest = word.substring(1).toLowerCase();
+
+    return wordStart + wordRest;
+}
+
+console.log(capitalizeString("hallo"));
